@@ -4,8 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blogging Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+ <script src="https://cdn.tailwindcss.com"></script>
+
+ <script src="https://kit.fontawesome.com/1fb3628ce7.js" crossorigin="anonymous"></script>
+ <!-- google font cdn -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+<style>
+    .font-lexend {
+  font-family: "Lexend", sans-serif;
+  
+}
+</style>
 </head>
-<body>
-    
+<body class="font-lexend">
+    <header>
+        <nav class="bg-[#f8f6eb]">
+            <div class="lg:w-4/5 md:w-4/5 mx-auto w-full flex justify-between py-4">
+              <button id="btn-home" class="btn border-0 bg-[#B4F461] hover:bg-[#B4F461] ml-4">Home</button>
+              <div class="flex items-center ml-6">
+                  <img src="assets/logo.png" alt="">
+                  <p class="ml-2 font-semibold text-[1.25rem]">Donate Bangladesh</p>
+              </div>
+              <div class="flex items-center">
+                  <img src="assets/coin.png" alt="">
+                  <p class="font-medium teex-[1.25rem] color-[rgba(17, 17, 17, 0.7)]">55500 BDT</p>
+              </div>
+            </div>
+           </nav>
+    </header>
+    <main class="w-4/5 mx-auto mt-10">
+        <h1 class="font-extrabold text-[2rem] mb-3 ml-3">Important FAQ <i class="fa-solid fa-question"></i></h1>
+        <div class="collapse collapse-arrow bg-base-200 mb-1">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+            <div class="collapse-content">
+              <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a webpage as a tree of objects, where each object corresponds to a part of the document (such as elements, attributes, and text). The DOM allows scripts (like JavaScript) to interact with, modify, and update the content, structure, and style of a webpage dynamically, without needing to reload the page.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200 mb-1">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+            <div class="collapse-content">
+              <p>To select an element from the DOM, JavaScript provides several methods. The most common ways include:
+                1. getElementById() <br> 2. getElementsByClassName() <br> 3. getElementsByTagName() <br> 4. querySelector() <br> 5. querySelectorAll()
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200 mb-1">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+            <div class="collapse-content">
+              <p>Event delegation is a technique in the DOM that allows you to handle events more efficiently by attaching a single event listener to a parent element rather than multiple listeners to individual child elements. The event listener on the parent element can respond to events triggered by its child elements through a mechanism called event bubbling.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+            <div class="collapse-content">
+              <p>To manipulate an element's attributes and styles using the DOM, you can use methods like setAttribute(), getAttribute(), or directly access properties like id, className, or src for attributes. For styles, you can modify the style property of an element to change its CSS inline. For example, to change an image's src and set its width via CSS, you could do: image.setAttribute('src', 'newImage.jpg'); and image.style.width = '200px';. You can also toggle classes using classList.add(), remove(), or toggle() for more advanced styling control.</p>
+            </div>
+          </div>
+
+          <!-- <script src="js/blog.js"></script> -->
+    </main>
 </body>
 </html>
