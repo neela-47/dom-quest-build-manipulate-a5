@@ -6,12 +6,11 @@ document.getElementById('donate-noakhali')
 
     const donateMoney = getInputFieldValue('noakhali-input-money');
     console.log('donate money', donateMoney);
-    if(typeof donateMoney !== NaN && typeof donateMoney !== 'string' && donateMoney >= 0){
+    const myMoney = getTextValueById('my-money');
+    if(typeof donateMoney !== NaN && typeof donateMoney !== 'string' && donateMoney >= 0 && myMoney >= donateMoney  ){
         const balance = getTextValueById('noakhali-total-donation');
         const newBalance = balance + donateMoney;
         document.getElementById('noakhali-total-donation').innerText= newBalance;
-    
-        const myMoney = getTextValueById('my-money');
         const myNewMoney = myMoney - donateMoney;
        document.getElementById('my-money').innerText= myNewMoney;
         
@@ -62,13 +61,14 @@ document.getElementById('donate-feni')
 
     const donateMoney = getInputFieldValue('input-feni-money');
     console.log('donate money', donateMoney);
+    const myMoney = getTextValueById('my-money');
     
-    if(typeof donateMoney !== NaN && typeof donateMoney !== 'string' && donateMoney >= 0){
+    if(typeof donateMoney !== NaN && typeof donateMoney !== 'string' && donateMoney >= 0 && myMoney > donateMoney){
         const balance = getTextValueById('feni-total-donation');
         const newBalance = balance + donateMoney;
         document.getElementById('feni-total-donation').innerText= newBalance;
     
-        const myMoney = getTextValueById('my-money');
+        
         const myNewMoney = myMoney - donateMoney;
         document.getElementById('my-money').innerText= myNewMoney;
 
@@ -78,7 +78,7 @@ document.getElementById('donate-feni')
       const div = document.createElement('div');
        div.innerHTML=`
        <div class="border-[2px] border-solid border-black rounded-xl pl-5 py-3 mb-2">
-        <p class="font-bold text-[1.25rem]">${donateMoney} 6500 Taka is Donated for Flood Relief in Feni,Bangladesh </p>
+        <p class="font-bold text-[1.25rem]">${donateMoney} Taka is Donated for Flood Relief in Feni,Bangladesh </p>
         <p>Date:
       
         ${new Date().toLocaleString('en-US', {
@@ -114,18 +114,21 @@ document.getElementById('quata-donation')
 
     const donateMoney = getInputFieldValue('quata-input-money');
     console.log('donate money', donateMoney);
+    const myMoney = getTextValueById('my-money');
     
-    if(typeof donateMoney !== NaN && typeof donateMoney !== 'string' && donateMoney >= 0){
+    if(typeof donateMoney !== NaN && typeof donateMoney !== 'string' && donateMoney >= 0 && myMoney > donateMoney){
         const balance = getTextValueById('quata-total-donation');
         const newBalance = balance + donateMoney;
         document.getElementById('quata-total-donation').innerText= newBalance;
+        const myNewMoney = myMoney - donateMoney;
+        document.getElementById('my-money').innerText= myNewMoney;
     
         my_modal_1.show();
        
         const div = document.createElement('div');
         div.innerHTML=`
         <div class="border-[2px] border-solid border-black rounded-xl pl-5 py-3 mb-2">
-         <p class="font-bold text-[1.25rem]">${donateMoney} 15500 Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh </p>
+         <p class="font-bold text-[1.25rem]">${donateMoney} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh </p>
          <p>Date:
        
          ${new Date().toLocaleString('en-US', {
@@ -160,11 +163,14 @@ document.getElementById('cancer-donation')
 
     const donateMoney = getInputFieldValue('cancer-input-money');
     console.log('donate money', donateMoney);
+    const myMoney = getTextValueById('my-money');
     
     if(typeof donateMoney !== NaN && typeof donateMoney !== 'string' && donateMoney >= 0){
         const balance = getTextValueById('cancer-total-donation');
         const newBalance = balance + donateMoney;
         document.getElementById('cancer-total-donation').innerText= newBalance;
+        const myNewMoney = myMoney - donateMoney;
+        document.getElementById('my-money').innerText= myNewMoney;
     
         my_modal_1.show();
        
@@ -203,11 +209,14 @@ document.getElementById('gaza-donation')
 
     const donateMoney = getInputFieldValue('gaza-input-money');
     console.log('donate money', donateMoney);
+    const myMoney = getTextValueById('my-money');
     
     if(typeof donateMoney !== NaN && typeof donateMoney !== 'string' && donateMoney >= 0){
         const balance = getTextValueById('gaza-total-donation');
         const newBalance = balance + donateMoney;
         document.getElementById('gaza-total-donation').innerText= newBalance;
+        const myNewMoney = myMoney - donateMoney;
+        document.getElementById('my-money').innerText= myNewMoney;
     
         my_modal_1.show();
        
@@ -249,11 +258,14 @@ document.getElementById('food-donation')
 
     const donateMoney = getInputFieldValue('food-input-money');
     console.log('donate money', donateMoney);
+    const myMoney = getTextValueById('my-money');
     
     if(typeof donateMoney !== NaN && typeof donateMoney !== 'string' && donateMoney >= 0){
         const balance = getTextValueById('food-total-donation');
         const newBalance = balance + donateMoney;
         document.getElementById('food-total-donation').innerText= newBalance;
+        const myNewMoney = myMoney - donateMoney;
+        document.getElementById('my-money').innerText= myNewMoney;
     
         my_modal_1.show();
        
