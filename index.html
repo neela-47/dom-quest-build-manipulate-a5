@@ -39,7 +39,7 @@
     
   </div>
 </dialog>
-    <header class="sticky top-0 z-50 backdrop:blur">
+    <header id="blur-header" class="sticky top-0 z-50 backdrop:blur ">
         <!-- nav ber starts here -->
          <nav class="bg-[#f8f6eb]">
           <div class="lg:w-4/5 md:w-4/5 mx-auto w-full flex justify-between py-4">
@@ -49,10 +49,16 @@
                 <p class="ml-2 font-semibold text-[1.25rem]">Donate Bangladesh</p>
             </div>
             <div class="flex items-center gap-2">
-                <img src="assets/coin.png" alt="">
-                <p id="my-money" class="font-medium teex-[1.25rem]">55500 </p>
-                <p>BDT</p>
+              <div class="lg:flex md:flex items-center">
+      
+                <img src="assets/coin.png" alt="" >
+                <p id="my-money" class="font-medium teex-[1.25rem]">55000</p>
+              </div>
+               
+               <p class="lg:flex">BDT</p>
+               
             </div>
+           
           </div>
          </nav>
          <!-- banner part starts here -->

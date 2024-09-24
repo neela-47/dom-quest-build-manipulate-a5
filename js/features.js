@@ -12,5 +12,6 @@ let btnHistory = document.getElementById('btn-history')
 btnHistory = document.getElementById('btn-history').classList.add('bg-[#B4F461]');
 btnDonate= document.getElementById('btn-donate').classList.remove('bg-[#B4F461]');
 showElementsById('show-transaction-history') ;  
-})
+});
 
+ 
