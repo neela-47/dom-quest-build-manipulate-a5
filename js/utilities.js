@@ -10,3 +10,13 @@ function getTextValueById(id)
     const TextValueNumber = parseFloat(TextValue);
     return TextValueNumber;
 }
+
+function showElementsById(id){
+    document.getElementById('show-transaction-history').classList.add('hidden');
+    document.getElementById('show-donation').classList.add('hidden');
+    document.getElementById(id).classList.remove('hidden');
+}
+
+function showPopUpById(id){
+  document.getElementById(id)
+}

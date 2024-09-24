@@ -13,8 +13,36 @@ document.getElementById('donate-noakhali')
     
         const myMoney = getTextValueById('my-money');
         const myNewMoney = myMoney - donateMoney;
-        document.getElementById('my-money').innerText= myNewMoney;
-        alert(" Donation successful")
+       document.getElementById('my-money').innerText= myNewMoney;
+        
+    //    alert('successful');
+    my_modal_1.show();
+       
+
+        const div = document.createElement('div');
+       div.innerHTML=`
+       <div class="border-[2px] border-solid border-black rounded-xl pl-5 py-3 mb-2">
+        <p class="font-bold text-[1.25rem]">${donateMoney} Taka is Donated for famine-2024 at Noakhali, Bangladesh </p>
+        <p>Date:
+      
+        ${new Date().toLocaleString('en-US', {
+            timeZone: 'Asia/Dhaka',
+            timeStyle: 'medium',
+            dateStyle: 'full'
+           })}
+
+       
+      
+        </p>
+
+       </div>
+
+        `;
+
+        const history= document.getElementById('show-transaction-history');
+        history.insertBefore(div , history.firstChild);
+      
+        
     }
     else
     {
@@ -43,7 +71,33 @@ document.getElementById('donate-feni')
         const myMoney = getTextValueById('my-money');
         const myNewMoney = myMoney - donateMoney;
         document.getElementById('my-money').innerText= myNewMoney;
-        alert(" Donation successful")
+
+        my_modal_1.show();
+       
+
+      const div = document.createElement('div');
+       div.innerHTML=`
+       <div class="border-[2px] border-solid border-black rounded-xl pl-5 py-3 mb-2">
+        <p class="font-bold text-[1.25rem]">${donateMoney} 6500 Taka is Donated for Flood Relief in Feni,Bangladesh </p>
+        <p>Date:
+      
+        ${new Date().toLocaleString('en-US', {
+            timeZone: 'Asia/Dhaka',
+            timeStyle: 'medium',
+            dateStyle: 'full'
+           })}
+
+       
+      
+        </p>
+
+       </div>
+
+        `;
+
+        const history= document.getElementById('show-transaction-history');
+        history.insertBefore(div , history.firstChild);
+ 
     }
     else
     {
@@ -66,10 +120,30 @@ document.getElementById('quata-donation')
         const newBalance = balance + donateMoney;
         document.getElementById('quata-total-donation').innerText= newBalance;
     
-        const myMoney = getTextValueById('my-money');
-        const myNewMoney = myMoney - donateMoney;
-        document.getElementById('my-money').innerText= myNewMoney;
-        alert(" Donation successful")
+        my_modal_1.show();
+       
+        const div = document.createElement('div');
+        div.innerHTML=`
+        <div class="border-[2px] border-solid border-black rounded-xl pl-5 py-3 mb-2">
+         <p class="font-bold text-[1.25rem]">${donateMoney} 15500 Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh </p>
+         <p>Date:
+       
+         ${new Date().toLocaleString('en-US', {
+             timeZone: 'Asia/Dhaka',
+             timeStyle: 'medium',
+             dateStyle: 'full'
+            })}
+ 
+        
+       
+         </p>
+ 
+        </div>
+ 
+         `;
+ 
+         const history= document.getElementById('show-transaction-history');
+         history.insertBefore(div , history.firstChild);
     }
     else
     {
@@ -92,10 +166,27 @@ document.getElementById('cancer-donation')
         const newBalance = balance + donateMoney;
         document.getElementById('cancer-total-donation').innerText= newBalance;
     
-        const myMoney = getTextValueById('my-money');
-        const myNewMoney = myMoney - donateMoney;
-        document.getElementById('my-money').innerText= myNewMoney;
-        alert(" Donation successful")
+        my_modal_1.show();
+       
+        const div = document.createElement('div');
+        div.innerHTML=`
+        <div class="border-[2px] border-solid border-black rounded-xl pl-5 py-3 mb-2">
+         <p class="font-bold text-[1.25rem]">${donateMoney} Taka is Donated for cancer patients, Bangladesh </p>
+         <p>Date:
+       
+         ${new Date().toLocaleString('en-US', {
+             timeZone: 'Asia/Dhaka',
+             timeStyle: 'medium',
+             dateStyle: 'full'
+            })}
+          </p>
+ 
+        </div>
+ 
+         `;
+ 
+         const history= document.getElementById('show-transaction-history');
+         history.insertBefore(div , history.firstChild);
     }
     else
     {
@@ -118,10 +209,30 @@ document.getElementById('gaza-donation')
         const newBalance = balance + donateMoney;
         document.getElementById('gaza-total-donation').innerText= newBalance;
     
-        const myMoney = getTextValueById('my-money');
-        const myNewMoney = myMoney - donateMoney;
-        document.getElementById('my-money').innerText= myNewMoney;
-        alert(" Donation successful")
+        my_modal_1.show();
+       
+        const div = document.createElement('div');
+       div.innerHTML=`
+       <div class="border-[2px] border-solid border-black rounded-xl pl-5 py-3 mb-2">
+        <p class="font-bold text-[1.25rem]">${donateMoney} Taka is Donated for Gaza, Bangladesh </p>
+        <p>Date:
+      
+        ${new Date().toLocaleString('en-US', {
+            timeZone: 'Asia/Dhaka',
+            timeStyle: 'medium',
+            dateStyle: 'full'
+           })}
+
+       
+      
+        </p>
+
+       </div>
+
+        `;
+
+        const history= document.getElementById('show-transaction-history');
+        history.insertBefore(div , history.firstChild);
     }
     else
     {
@@ -144,10 +255,30 @@ document.getElementById('food-donation')
         const newBalance = balance + donateMoney;
         document.getElementById('food-total-donation').innerText= newBalance;
     
-        const myMoney = getTextValueById('my-money');
-        const myNewMoney = myMoney - donateMoney;
-        document.getElementById('my-money').innerText= myNewMoney;
-        alert(" Donation successful")
+        my_modal_1.show();
+       
+        const div = document.createElement('div');
+       div.innerHTML=`
+       <div class="border-[2px] border-solid border-black rounded-xl pl-5 py-3 mb-2">
+        <p class="font-bold text-[1.25rem]">${donateMoney} Taka is Donated for preventing for food, Bangladesh </p>
+        <p>Date:
+      
+        ${new Date().toLocaleString('en-US', {
+            timeZone: 'Asia/Dhaka',
+            timeStyle: 'medium',
+            dateStyle: 'full'
+           })}
+
+       
+      
+        </p>
+
+       </div>
+
+        `;
+
+        const history= document.getElementById('show-transaction-history');
+        history.insertBefore(div , history.firstChild);
     }
     else
     {
