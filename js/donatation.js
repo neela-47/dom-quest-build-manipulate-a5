@@ -165,7 +165,7 @@ document.getElementById('cancer-donation')
     console.log('donate money', donateMoney);
     const myMoney = getTextValueById('my-money');
     
-    if(typeof donateMoney !== NaN && typeof donateMoney !== 'string' && donateMoney >= 0){
+    if(typeof donateMoney !== NaN && typeof donateMoney !== 'string' && donateMoney >= 0 && myMoney > donateMoney){
         const balance = getTextValueById('cancer-total-donation');
         const newBalance = balance + donateMoney;
         document.getElementById('cancer-total-donation').innerText= newBalance;
@@ -211,7 +211,7 @@ document.getElementById('gaza-donation')
     console.log('donate money', donateMoney);
     const myMoney = getTextValueById('my-money');
     
-    if(typeof donateMoney !== NaN && typeof donateMoney !== 'string' && donateMoney >= 0){
+    if(typeof donateMoney !== NaN && typeof donateMoney !== 'string' && donateMoney >= 0 && myMoney > donateMoney){
         const balance = getTextValueById('gaza-total-donation');
         const newBalance = balance + donateMoney;
         document.getElementById('gaza-total-donation').innerText= newBalance;
@@ -260,7 +260,7 @@ document.getElementById('food-donation')
     console.log('donate money', donateMoney);
     const myMoney = getTextValueById('my-money');
     
-    if(typeof donateMoney !== NaN && typeof donateMoney !== 'string' && donateMoney >= 0){
+    if(typeof donateMoney !== NaN && typeof donateMoney !== 'string' && donateMoney >= 0 && myMoney > donateMoney){
         const balance = getTextValueById('food-total-donation');
         const newBalance = balance + donateMoney;
         document.getElementById('food-total-donation').innerText= newBalance;
